@@ -1,4 +1,16 @@
+# Create .gitignore
+cat > .gitignore << 'EOF'
+.env
 venv/
 __pycache__/
 *.pyc
-.env
+*.pem
+*.zip
+chroma_db/
+.terraform/
+*.tfstate
+*.tfstate.backup
+.DS_Store
+*.tfvars
+*.tfvars.json
+EOF
